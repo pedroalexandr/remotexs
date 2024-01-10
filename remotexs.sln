@@ -13,8 +13,6 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Receiver", "Receiver\Receiv
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Sender", "Sender\Sender.vcxproj", "{00B3C2DE-77BB-4E6F-AB3F-5E6A45BCEB3F}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "unit-tests", "unit-tests\unit-tests.vcxproj", "{131BCCCF-8574-431A-899D-DFF9B7E7400D}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -35,14 +33,6 @@ Global
 		{00B3C2DE-77BB-4E6F-AB3F-5E6A45BCEB3F}.Release|x64.ActiveCfg = Release|x64
 		{00B3C2DE-77BB-4E6F-AB3F-5E6A45BCEB3F}.Release|x64.Build.0 = Release|x64
 		{00B3C2DE-77BB-4E6F-AB3F-5E6A45BCEB3F}.Release|x86.ActiveCfg = Release|Win32
-		{131BCCCF-8574-431A-899D-DFF9B7E7400D}.Debug|x64.ActiveCfg = Debug|x64
-		{131BCCCF-8574-431A-899D-DFF9B7E7400D}.Debug|x64.Build.0 = Debug|x64
-		{131BCCCF-8574-431A-899D-DFF9B7E7400D}.Debug|x86.ActiveCfg = Debug|Win32
-		{131BCCCF-8574-431A-899D-DFF9B7E7400D}.Debug|x86.Build.0 = Debug|Win32
-		{131BCCCF-8574-431A-899D-DFF9B7E7400D}.Release|x64.ActiveCfg = Release|x64
-		{131BCCCF-8574-431A-899D-DFF9B7E7400D}.Release|x64.Build.0 = Release|x64
-		{131BCCCF-8574-431A-899D-DFF9B7E7400D}.Release|x86.ActiveCfg = Release|Win32
-		{131BCCCF-8574-431A-899D-DFF9B7E7400D}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
