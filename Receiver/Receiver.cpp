@@ -7,16 +7,13 @@
 #pragma comment(lib, "d3d11.lib")
 #pragma comment(lib, "dxgi.lib")
 
-// Global variables
 IDXGIOutputDuplication* dxgiOutputDuplication = nullptr;
 ID3D11Device* d3dDevice = nullptr;
 ID3D11DeviceContext* d3dDeviceContext = nullptr;
 ID3D11Texture2D* texture = nullptr;
 IDXGISwapChain* swapChain = nullptr;
 
-// Function to initialize DirectX and the screen capture
-bool InitializeDirectX(HWND hWnd) {
-    // Create DXGI Factory
+bool InitializeDirectXAnsScreenCapture(HWND hWnd) {
     IDXGIFactory1* dxgiFactory;
     if (FAILED(CreateDXGIFactory1(__uuidof(IDXGIFactory1), (void**)&dxgiFactory)))
         return false;
@@ -106,7 +103,6 @@ bool InitializeDirectX(HWND hWnd) {
     swapChainDesc.Windowed = TRUE;
 
     if (FAILED(dxgiFactory->CreateSwapChain(d3dDevice, &swapChainDesc, &swapChain))) {
-        // Error handling
         return false;
     }
 
@@ -178,6 +174,7 @@ void RenderCapturedFrame(HWND hWnd) {
 
                     backBuffer->Release();
 
+                    // Commented out since it's not working with dedicated GPU for some reason
                     /*D3D11_SHADER_RESOURCE_VIEW_DESC shaderResourceViewDesc;
                     ZeroMemory(&shaderResourceViewDesc, sizeof(shaderResourceViewDesc));
                     shaderResourceViewDesc.Format = DXGI_FORMAT_B8G8R8A8_UNORM;
@@ -244,7 +241,7 @@ int WINAPI WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, _
     UpdateWindow(hWnd);
 
     // Initialize DirectX and screen capture
-    if (!InitializeDirectX(hWnd)) {
+    if (!InitializeDirectXAnsScreenCapture(hWnd)) {
         MessageBox(NULL, L"DirectX Initialization Failed!", L"Error!", MB_ICONEXCLAMATION | MB_OK);
         return 0;
     }
