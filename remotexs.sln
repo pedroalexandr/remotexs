@@ -6,12 +6,20 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{37A1E816-6F58-4781-9EB1-2F42121D126E}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
+		FIXME.md = FIXME.md
 		README.md = README.md
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Receiver", "Receiver\Receiver.vcxproj", "{7E41826B-ABAB-4EF0-B905-EB12EF534916}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Sender", "Sender\Sender.vcxproj", "{00B3C2DE-77BB-4E6F-AB3F-5E6A45BCEB3F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "protofiles", "protofiles", "{78659A06-BBF0-4F33-8491-0D55CEA4CF89}"
+	ProjectSection(SolutionItems) = preProject
+		proto\sender_service.proto = proto\sender_service.proto
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ConsoleApplication1", "ConsoleApplication1\ConsoleApplication1.vcxproj", "{1477DA96-80FC-4829-8FFA-9942A87CF8C2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +41,14 @@ Global
 		{00B3C2DE-77BB-4E6F-AB3F-5E6A45BCEB3F}.Release|x64.ActiveCfg = Release|x64
 		{00B3C2DE-77BB-4E6F-AB3F-5E6A45BCEB3F}.Release|x64.Build.0 = Release|x64
 		{00B3C2DE-77BB-4E6F-AB3F-5E6A45BCEB3F}.Release|x86.ActiveCfg = Release|Win32
+		{1477DA96-80FC-4829-8FFA-9942A87CF8C2}.Debug|x64.ActiveCfg = Debug|x64
+		{1477DA96-80FC-4829-8FFA-9942A87CF8C2}.Debug|x64.Build.0 = Debug|x64
+		{1477DA96-80FC-4829-8FFA-9942A87CF8C2}.Debug|x86.ActiveCfg = Debug|Win32
+		{1477DA96-80FC-4829-8FFA-9942A87CF8C2}.Debug|x86.Build.0 = Debug|Win32
+		{1477DA96-80FC-4829-8FFA-9942A87CF8C2}.Release|x64.ActiveCfg = Release|x64
+		{1477DA96-80FC-4829-8FFA-9942A87CF8C2}.Release|x64.Build.0 = Release|x64
+		{1477DA96-80FC-4829-8FFA-9942A87CF8C2}.Release|x86.ActiveCfg = Release|Win32
+		{1477DA96-80FC-4829-8FFA-9942A87CF8C2}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

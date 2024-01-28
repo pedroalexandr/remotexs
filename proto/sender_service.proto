@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+import "google/protobuf/empty.proto";
+
+message Frame {
+    bytes data = 1;
+}
+
+service SenderService {
+    rpc StartCapturingFrames (google.protobuf.Empty) returns (google.protobuf.Empty);
+    rpc AcquireNextFrame (google.protobuf.Empty) returns (Frame);
+    rpc StopCapturingFrames(google.protobuf.Empty) returns (google.protobuf.Empty);
+}

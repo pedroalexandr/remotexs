@@ -1,0 +1,2 @@
+- Copy zlib.dll to output folder
+- Always get frame dimensions dinamically, not hard-coded
