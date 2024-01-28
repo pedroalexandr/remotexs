@@ -1,0 +1,13 @@
+prefix=D:/out/grpc_v1.60.0/MSVC143_64/Release
+exec_prefix=D:/out/grpc_v1.60.0/MSVC143_64/Release
+libdir=D:/out/grpc_v1.60.0/MSVC143_64/Release/lib
+sharedlibdir=D:/out/grpc_v1.60.0/MSVC143_64/Release/lib
+includedir=D:/out/grpc_v1.60.0/MSVC143_64/Release/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}

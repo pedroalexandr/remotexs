@@ -1,0 +1,9 @@
+vendor/grpc/Debug/lib/grpc.pdb filter=lfs diff=lfs merge=lfs -text
+vendor/grpc/Release/lib/grpc.lib filter=lfs diff=lfs merge=lfs -text
+vendor/grpc/Debug/bin/protoc.pdb filter=lfs diff=lfs merge=lfs -text
+vendor/grpc/Debug/lib/grpc++.lib filter=lfs diff=lfs merge=lfs -text
+vendor/grpc/Debug/lib/grpc.lib filter=lfs diff=lfs merge=lfs -text
+vendor/grpc/Debug/lib/grpc_unsecure.lib filter=lfs diff=lfs merge=lfs -text
+vendor/grpc/Debug/lib/libprotocd.lib filter=lfs diff=lfs merge=lfs -text
+vendor/grpc/Debug/lib/grpc_authorization_provider.lib filter=lfs diff=lfs merge=lfs -text
+vendor/grpc/Debug/lib/libprotobufd.lib filter=lfs diff=lfs merge=lfs -text
